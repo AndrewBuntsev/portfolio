@@ -1,44 +1,62 @@
-import React from "react";
-import CSS from "csstype";
+import React from 'react';
+import CSS from 'csstype';
+import MenuItem from './MenuItem';
 
 type Props = { open: boolean };
-type State = { open: boolean };
+type State = {};
 
 class Menu extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-    this.state = {
-      open: this.props.open ? this.props.open : false
-    };
-  }
-
-  componentWillReceiveProps(nextProps: Props) {
-    if (nextProps.open !== this.state.open) {
-      this.setState({ open: nextProps.open });
-    }
-  }
-
   render() {
+    const menuItems = [];
+    menuItems.push(
+      <MenuItem key={0} delay={`${0 * 0.1}s`} title="About" route="/" />
+    );
+    menuItems.push(
+      <MenuItem
+        key={1}
+        delay={`${1 * 0.1}s`}
+        title="Projects"
+        route="/projects"
+      />
+    );
+    menuItems.push(
+      <MenuItem
+        key={2}
+        delay={`${2 * 0.1}s`}
+        title="Profile"
+        route="/profile"
+      />
+    );
+    menuItems.push(
+      <MenuItem
+        key={3}
+        delay={`${3 * 0.1}s`}
+        title="Contacts"
+        route="/contacts"
+      />
+    );
+
     const containerStyle: CSS.Properties = {
-      position: "fixed",
-      top: 0,
-      left: 0,
-      height: this.state.open ? "100%" : 0,
-      minWidth: "150px",
-      width: "50vw",
-      display: "flex",
-      flexDirection: "column",
-      background: "black",
+      position: 'fixed',
+      top: '5px',
+      left: '5px',
+      height: this.props.open ? '200px' : 0,
+      minWidth: '150px',
+      maxWidth: '250px',
+      width: '50vw',
+      background: 'black',
       opacity: 0.95,
-      color: "#fafafa",
-      transition: "height 0.3s ease",
+      borderRadius: '5px',
+      transition: 'height 0.3s ease',
       zIndex: 2
     };
     return (
       <div style={containerStyle}>
-        {this.state.open ? (
-          <div style={{ paddingTop: "3rem" }}>{this.props.children}</div>
-        ) : null}
+        {this.props.open
+          ? <ul style={{ listStyleType: 'none' }}>
+              {menuItems}
+            </ul>
+          : null}
       </div>
     );
   }

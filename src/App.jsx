@@ -1,9 +1,10 @@
-import React from 'react';
-import './App.scss';
-import Main from './components/Main';
+import React from 'react'
+import './App.scss'
 
-function App() {
-  return <Main />;
+import Main from './components/Main'
+
+function App () {
+  return <Main />
 }
 
-export default App;
+export default App

@@ -1,3 +1,8 @@
+body {
+  font-family: OpenSans, sans-serif;
+  background-color: #f6f5f7;
+}
+
 .mainPanel {
   min-height: 100vh;
   display: grid;
@@ -39,6 +44,23 @@
   }
 }
 
+.centralPanel {
+  font-family: OpenSans, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.4px;
+  background-attachment: scroll;
+  color: rgb(0, 0, 0);
+  padding: 0px 8px;
+  margin: 0 0 0 40px;
+  grid-row: 1;
+  grid-column: 2;
+}
+
+//BurgerMenu styles
+
 .burgerMenuItem {
   opacity: 0;
   animation: 1s appear forwards;
@@ -63,22 +85,6 @@
   }
 }
 
-.centralPanel {
-  font-family: OpenSans, sans-serif;
-  font-size: 16px;
-  font-style: normal;
-  font-variant: normal;
-  font-weight: 400;
-  line-height: 18.4px;
-  background-attachment: scroll;
-  color: rgb(0, 0, 0);
-  padding: 0px 8px;
-  margin: 0 0 0 40px;
-  grid-row: 1;
-  grid-column: 2;
-}
-
-//BurgerMenu styles
 @import url("https://fonts.googleapis.com/css?family=Lobster");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
@@ -110,3 +116,41 @@
 }
 
 //End BurgerMenu styles
+
+//Contacts section
+
+.mailTo {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  a {
+    color: #777;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 0 0 8px;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.address {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #777;
+  .addressLabel {
+    color: #777;
+    font-weight: bold;
+    margin: 0 0 0 8px;
+  }
+}
+
+.contactsLabel {
+  color: #999;
+  font-size: 14px;
+  margin: 5px 0 0 0;
+}
+
+.contactFormInput {
+  width: 100%;
+}
+
+//End Contacts section

@@ -4,6 +4,7 @@ import Sidebar from './Sidebar';
 import CentralPanel from './CentralPanel';
 import BurgerMenu from './burgerMenu/BurgerMenu';
 
+const BREAKPOINT_WIDTH = 1024;
 type Props = {};
 type State = { windowWidth: number; windowHeight: number };
 
@@ -36,8 +37,8 @@ class Main extends React.Component<Props, State> {
   render() {
     return (
       <div className="mainPanel">
-        {this.state.windowWidth > 768 && <Sidebar />}
-        {this.state.windowWidth <= 768 && <BurgerMenu />}
+        {this.state.windowWidth > BREAKPOINT_WIDTH && <Sidebar />}
+        {this.state.windowWidth <= BREAKPOINT_WIDTH && <BurgerMenu />}
 
         <CentralPanel />
       </div>

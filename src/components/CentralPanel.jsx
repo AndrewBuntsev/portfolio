@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 
 import About from './About'
 import Contact from './Contact'
+import Projects from './Projects'
 
 class CentralPanel extends React.Component {
   constructor (props) {
@@ -14,6 +15,7 @@ class CentralPanel extends React.Component {
       <div className='centralPanel'>
         <Route exact path='/' component={About} />
         <Route exact path='/contacts' component={Contact} />
+        <Route exact path='/projects' component={Projects} />
       </div>
     )
   }

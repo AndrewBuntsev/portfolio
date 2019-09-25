@@ -7,28 +7,33 @@ class PhoenixProj extends React.Component {
   }
 
   render () {
+    console.log(process.env.PUBLIC_URL)
     return (
       <div className='zoom-gallery'>
         <a
-          href='http://farm4.staticflickr.com/3763/9204547649_0472680945_o.jpg'
-          data-source='http://500px.com/photo/32736307'
-          title='Into The Blue'
-          style={{ width: '193px', height: '125px' }}
-        >
-          <img
-            src='http://farm4.staticflickr.com/3763/9204547649_7de96ee188_t.jpg'
-            width='193'
-            height='125'
-          />
-        </a>
-        <a
-          href='http://farm3.staticflickr.com/2856/9207329420_7f2a668b06_o.jpg'
-          data-source='http://500px.com/photo/32554131'
-          title='Light Sabre'
+          href='img/projects/Phoenix/PlanningSchedule.png'
+          data-source='img/projects/Phoenix/PlanningSchedule.png'
+          title='Planning Schedule'
           style={{ width: '82px', height: '125px' }}
         >
           <img
-            src='http://farm3.staticflickr.com/2856/9207329420_e485948b01_t.jpg'
+            src={require('./img/Phoenix/PlanningSchedule.png')}
+            width='82px'
+            height='125'
+          />
+        </a>
+        test text
+        <p>another test</p>
+        <p>another test</p>
+        <p>another test</p>
+        <a
+          href='img/projects/Phoenix/Catalog.png'
+          data-source='img/projects/Phoenix/Catalog.png'
+          title='Catalog'
+          style={{ width: '82px', height: '125px' }}
+        >
+          <img
+            src={require('./img/Phoenix/Catalog.png')}
             width='82px'
             height='125'
           />

@@ -45,8 +45,8 @@ body {
 }
 
 .centralPanel {
-  font-family: OpenSans, sans-serif;
-  font-size: 16px;
+  font-family: Verdana, OpenSans, sans-serif;
+  font-size: 14px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
@@ -57,6 +57,22 @@ body {
   margin: 0 0 0 40px;
   grid-row: 1;
   grid-column: 2;
+}
+
+.zoom-gallery {
+  h3 {
+    text-align: center;
+    clear: both;
+  }
+  p {
+    padding: 5px;
+    clear: both;
+    a {
+      img {
+        margin: 10px;
+      }
+    }
+  }
 }
 
 //BurgerMenu styles

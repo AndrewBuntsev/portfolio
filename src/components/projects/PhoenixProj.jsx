@@ -17,7 +17,7 @@ class PhoenixProj extends React.Component {
         <h3>Project Description</h3>
         <p>
           <a
-            href='img/projects/Phoenix/PlanningSchedule.png'
+            href='/img/projects/Phoenix/PlanningSchedule.png'
             data-source='img/projects/Phoenix/PlanningSchedule.png'
             title='Planning Schedule'
           >
@@ -40,7 +40,7 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='img/projects/Phoenix/Catalog.png'
+            href='/img/projects/Phoenix/Catalog.png'
             data-source='img/projects/Phoenix/Catalog.png'
             title='Catalog'
           >
@@ -57,9 +57,9 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='img/projects/Phoenix/PresentationStack.png'
+            href='/img/projects/Phoenix/PresentationStack.png'
             data-source='img/projects/Phoenix/PresentationStack.png'
-            title='Catalog'
+            title='Presentation Stack'
           >
             <img
               src={require('./img/Phoenix/PresentationStack.png')}
@@ -80,9 +80,9 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='img/projects/Phoenix/MaterialManagement.png'
+            href='/img/projects/Phoenix/MaterialManagement.png'
             data-source='img/projects/Phoenix/MaterialManagement.png'
-            title='Catalog'
+            title='Material Details'
           >
             <img
               src={require('./img/Phoenix/MaterialManagement.png')}
@@ -90,16 +90,16 @@ class PhoenixProj extends React.Component {
               style={{ float: 'left' }}
             />
           </a>
-          <div style={{ marginTop: '60px' }}>
+          <span style={{ marginTop: '60px', display: 'block' }}>
             Every break item also could be edited via the Material Management
             screen.
-          </div>
+          </span>
         </p>
         <p>
           <a
-            href='img/projects/Phoenix/LogAmendReport.png'
+            href='/img/projects/Phoenix/LogAmendReport.png'
             data-source='img/projects/Phoenix/LogAmendReport.png'
-            title='Catalog'
+            title='Log Amend Report'
           >
             <img
               src={require('./img/Phoenix/LogAmendReport.png')}

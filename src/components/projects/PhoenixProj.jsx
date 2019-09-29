@@ -12,7 +12,6 @@ class PhoenixProj extends React.Component {
     return (
       <div
         className='zoom-gallery phoenix-zoom-gallery'
-        style={{ paddingBottom: '20px' }}
       >
         <h3>Project Description</h3>
         <p>

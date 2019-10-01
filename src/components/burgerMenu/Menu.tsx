@@ -1,38 +1,20 @@
 import React from 'react';
 import CSS from 'csstype';
 import MenuItem from './MenuItem';
+import { PAGES } from '../common/pages';
 
-type Props = { open: boolean };
+type Props = { open: boolean; onMenuItemClick(): void };
 type State = {};
 
 class Menu extends React.Component<Props, State> {
   render() {
-    const menuItems = [];
-    menuItems.push(
-      <MenuItem key={0} delay={`${0 * 0.1}s`} title="About" route="/" />
-    );
-    menuItems.push(
+    const menuItems = PAGES.map((page, i) =>
       <MenuItem
-        key={1}
-        delay={`${1 * 0.1}s`}
-        title="Projects"
-        route="/projects"
-      />
-    );
-    menuItems.push(
-      <MenuItem
-        key={2}
-        delay={`${2 * 0.1}s`}
-        title="Profile"
-        route="/profile"
-      />
-    );
-    menuItems.push(
-      <MenuItem
-        key={3}
-        delay={`${3 * 0.1}s`}
-        title="Contacts"
-        route="/contacts"
+        key={i}
+        delay={`${i * 0.1}s`}
+        title={page.title}
+        route={page.route}
+        onClick={this.props.onMenuItemClick}
       />
     );
 
@@ -40,7 +22,7 @@ class Menu extends React.Component<Props, State> {
       position: 'fixed',
       top: '5px',
       left: '5px',
-      height: this.props.open ? '200px' : 0,
+      height: this.props.open ? menuItems.length * 45 + 'px' : 0,
       minWidth: '150px',
       maxWidth: '250px',
       width: '50vw',

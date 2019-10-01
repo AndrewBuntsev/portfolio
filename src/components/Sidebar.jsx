@@ -1,39 +1,28 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react'
+import { NavLink } from 'react-router-dom'
+import { PAGES } from './common/pages'
 
 class Sidebar extends React.Component {
-  constructor(props) {
-    super(props);
+  constructor (props) {
+    super(props)
   }
 
-  render() {
+  render () {
+    const menuItems = PAGES.map((page, i) =>
+      <li key={i}>
+        <NavLink exact to={page.route} activeClassName='active'>
+          {page.title}
+        </NavLink>
+      </li>
+    )
     return (
-      <div className="sidebar">
+      <div className='sidebar'>
         <ul>
-          <li>
-            <NavLink exact to="/" activeClassName="active">
-              About
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/projects" activeClassName="active">
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/profile" activeClassName="active">
-              Profile
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/contacts" activeClassName="active">
-              Contacts
-            </NavLink>
-          </li>
+          {menuItems}
         </ul>
       </div>
-    );
+    )
   }
 }
 
-export default Sidebar;
+export default Sidebar

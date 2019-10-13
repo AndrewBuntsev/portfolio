@@ -1,6 +1,6 @@
 body {
   font-family: OpenSans, sans-serif;
-  background-color: #f6f5f7;
+  background-color: #f3efe0; //#f6f5f7;
 }
 
 .mainPanel {
@@ -50,11 +50,12 @@ body {
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
+  max-width: 900px;
   line-height: 18.4px;
   background-attachment: scroll;
   color: rgb(0, 0, 0);
   padding: 0px 8px;
-  margin: 0 0 0 40px;
+  margin: 0 auto 0 auto;
   grid-row: 1;
   grid-column: 2;
 }

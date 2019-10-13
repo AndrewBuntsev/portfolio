@@ -54,6 +54,18 @@ class ATSProj extends React.Component {
             allowFullScreen
           />
         </p>
+        <h3 style={{ textAlign: 'center' }}>Technical details</h3>
+        <p>Technologies stack: .NET 4.6, C#, WPF, MVVM, SQLite, ADB.</p>
+        <p>
+          <a href='https://bitbucket.org/andreibuntsev/ast' target='_blank'>
+            https://bitbucket.org/andreibuntsev/ast
+          </a>
+        </p>
+        <h3 style={{ textAlign: 'center' }}>My Role in the project</h3>
+        <p style={{ paddingBottom: '20px' }}>
+          I have been the only developer on the project along with Maksim
+          Kravchenko as the system analyst.
+        </p>
       </div>
     )
   }

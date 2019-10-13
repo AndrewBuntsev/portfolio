@@ -6,7 +6,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import PhoenixProj from './projects/PhoenixProj';
 import ATSProj from './projects/ATSProj';
-import Experiences from './Experiences';
+import Experiences from './experiences/Experiences';
 
 class CentralPanel extends React.Component {
   render() {

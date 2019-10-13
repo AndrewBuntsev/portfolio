@@ -10,9 +10,7 @@ class PhoenixProj extends React.Component {
 
   render () {
     return (
-      <div
-        className='zoom-gallery phoenix-zoom-gallery'
-      >
+      <div className='zoom-gallery phoenix-zoom-gallery'>
         <h3>Project Description</h3>
         <p>
           <a

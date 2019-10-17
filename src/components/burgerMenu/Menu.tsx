@@ -14,6 +14,7 @@ class Menu extends React.Component<Props, State> {
         delay={`${i * 0.1}s`}
         title={page.title}
         route={page.route}
+        externalLink={page.externalLink}
         onClick={this.props.onMenuItemClick}
       />
     );

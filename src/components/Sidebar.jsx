@@ -10,9 +10,14 @@ class Sidebar extends React.Component {
   render () {
     const menuItems = PAGES.map((page, i) =>
       <li key={i}>
-        <NavLink exact to={page.route} activeClassName='active'>
-          {page.title}
-        </NavLink>
+        {page.route &&
+          <NavLink exact to={page.route} activeClassName='active'>
+            {page.title}
+          </NavLink>}
+        {page.externalLink &&
+          <a href={page.externalLink} target='_blank'>
+            {page.title}
+          </a>}
       </li>
     )
     return (

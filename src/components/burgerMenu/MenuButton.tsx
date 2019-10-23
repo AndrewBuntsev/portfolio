@@ -8,7 +8,7 @@ const buttonStyle: CSS.Properties = {
   zIndex: 99,
   opacity: 0.9,
   background: 'black',
-  borderRadius: '3px',
+  borderRadius: '50%',
   color: 'white',
   fontFamily: 'Lobster',
   height: '32px',

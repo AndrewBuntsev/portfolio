@@ -16,6 +16,8 @@ body {
   font-style: normal;
   font-weight: 400;
   text-align: center;
+  position: fixed;
+  height: 100vh;
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   margin: 0px;
@@ -106,6 +108,23 @@ body {
       color: rgb(225, 123, 119);
     }
   }
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 54px;
+  font-weight: 300;
+  line-height: 59.4px;
+  text-align: center;
+  color: #22a39f;
+  margin: 25px 0 20px 0;
+  display: block;
+}
+
+.hr {
+  margin: 40px 0px;
+  border-color: #727878;
+  opacity: 0.2;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Lobster");

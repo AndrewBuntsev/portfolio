@@ -35,10 +35,16 @@ class Main extends React.Component<Props, State> {
   }
 
   render() {
+    const isLargeScreen = this.state.windowWidth > BREAKPOINT_WIDTH;
     return (
-      <div className="mainPanel">
-        {this.state.windowWidth > BREAKPOINT_WIDTH && <Sidebar />}
-        {this.state.windowWidth <= BREAKPOINT_WIDTH && <BurgerMenu />}
+      <div
+        className="mainPanel"
+        style={{
+          gridTemplateColumns: isLargeScreen ? '310px 4fr' : 'auto 4fr'
+        }}
+      >
+        {isLargeScreen && <Sidebar />}
+        {!isLargeScreen && <BurgerMenu />}
 
         <CentralPanel />
       </div>

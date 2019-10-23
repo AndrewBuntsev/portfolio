@@ -4,21 +4,8 @@ import ExperienceSection from './ExperienceSection'
 
 const CERT_WIDTH = 100
 const styles = {
-  title: {
-    fontFamily: '"Open Sans", sans-serif',
-    fontSize: '54px',
-    fontWeight: 300,
-    lineHeight: '59.4px',
-    textAlign: 'center',
-    color: '#22A39F',
-    margin: '20px 0 20px 0',
-    display: 'block'
-  },
-  hr: {
-    margin: '40px 0px',
-    borderColor: '#727878',
-    opacity: 0.2
-  },
+  
+  
   subtitle: {
     fontFamily: '"Open Sans", sans-serif',
     fontSize: '28px',
@@ -39,8 +26,8 @@ class Experiences extends React.Component {
   render () {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
-        <h2 style={styles.title}>Experiences</h2>
-        <hr style={styles.hr} />
+        <h2 className='title'>Experiences</h2>
+        <hr className='hr' />
         <h3 style={styles.subtitle}>Educations</h3>
 
         <ExperienceSection

@@ -1,7 +1,9 @@
 import React from 'react';
 import PhoenixCard from './projects/PhoenixCard';
-import { Grid } from '@material-ui/core';
 import ATSCard from './projects/ATSCard';
+import OrionCard from './projects/OrionCard';
+import { Grid } from '@material-ui/core';
+
 
 class Projects extends React.Component {
   render() {
@@ -17,7 +19,7 @@ class Projects extends React.Component {
             <ATSCard />
           </Grid>
           <Grid item xs={12} sm={4}>
-            <PhoenixCard />
+            <OrionCard />
           </Grid>
         </Grid>
       </div>

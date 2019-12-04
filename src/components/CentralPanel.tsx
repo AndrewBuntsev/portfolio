@@ -6,6 +6,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import PhoenixProj from './projects/PhoenixProj';
 import ATSProj from './projects/ATSProj';
+import OrionProj from './projects/OrionProj';
 import Experiences from './experiences/Experiences';
 
 class CentralPanel extends React.Component {
@@ -18,6 +19,7 @@ class CentralPanel extends React.Component {
         <Route exact path="/projects" component={Projects} />
         <Route exact path="/projects/phoenix" component={PhoenixProj} />
         <Route exact path="/projects/ats" component={ATSProj} />
+        <Route exact path="/projects/orion" component={OrionProj} />
       </div>
     );
   }

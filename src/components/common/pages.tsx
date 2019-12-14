@@ -9,6 +9,6 @@ export const PAGES: Array<PAGE> = [
   { title: 'Experiences', route: '/experiences' },
   { title: 'Projects', route: '/projects' },
   { title: 'Blog', externalLink: 'http://andreibuntsev.blogspot.com/' },
-  { title: 'Profile', route: '/profile' },
+  { title: 'Recommendations', route: '/recommendations' },
   { title: 'Contacts', route: '/contacts' }
 ];

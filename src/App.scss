@@ -21,7 +21,7 @@ body {
   background: rgb(0, 0, 0);
   color: rgb(255, 255, 255);
   margin: 0px;
-  padding: 40px 60px 0 40px;
+  padding: 40px 50px 0 20px;
   grid-row: 1;
   grid-column: 1;
 
@@ -88,6 +88,33 @@ body {
   font-style: italic;
   font-weight: 600;
   margin: 0;
+}
+
+blockquote:before {
+  position: relative;
+  content: "\201C";
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 66px;
+  font-family: '';
+  color: #045f8c;
+}
+
+.recommendationCard {
+  padding: 10px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: all 0.5s cubic-bezier(.4, 0, .2, 1) 0s;
+}
+.recommendationCard:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 10px;
 }
 
 //BurgerMenu styles

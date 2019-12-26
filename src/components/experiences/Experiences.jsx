@@ -4,21 +4,9 @@ import ExperienceSection from './ExperienceSection'
 
 const CERT_WIDTH = 100
 const styles = {
-  
-  
-  subtitle: {
-    fontFamily: '"Open Sans", sans-serif',
-    fontSize: '28px',
-    lineHeight: '30.8px',
-    fontWeight: 300,
-    color: '#22A39F',
-    display: 'block',
-    margin: '20px 0 20px 0'
-  },
   galleryImg: {
     display: 'block',
-    marginLeft: '20px'//,
-    //marginRight: 'auto'
+    marginLeft: '20px'
   }
 }
 
@@ -28,7 +16,7 @@ class Experiences extends React.Component {
       <div className='zoom-gallery experiences-zoom-gallery'>
         <h2 className='title'>Experiences</h2>
         <hr className='hr' />
-        <h3 style={styles.subtitle}>Educations</h3>
+        <h3 className='subtitle'>Educations</h3>
 
         <ExperienceSection
           title='Siberian State University of Geosystems and Technologies'
@@ -46,8 +34,8 @@ class Experiences extends React.Component {
           link='http://www.elglish.nsu.ru/'
         />
 
-        <hr style={styles.hr} />
-        <h3 style={styles.subtitle}>Certifications</h3>
+        <hr className='hr' />
+        <h3 className='subtitle'>Certifications</h3>
 
         <ExperienceSection
           title='Free Code Camp'
@@ -228,8 +216,8 @@ class Experiences extends React.Component {
           <i>Transcript ID: 929900; Access Code: abuntsev2010</i>
         </ExperienceSection>
 
-        <hr style={styles.hr} />
-        <h3 style={styles.subtitle}>Careers</h3>
+        <hr className='hr' />
+        <h3 className='subtitle'>Careers</h3>
 
         <ExperienceSection
           title='Nine Entertainment Co'

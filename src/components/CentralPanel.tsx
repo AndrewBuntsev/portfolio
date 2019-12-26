@@ -15,7 +15,7 @@ class CentralPanel extends React.Component {
     return (
       <div className="centralPanel">
         <Route exact path="/" component={About} />
-        <Route exact path="/contacts" component={Contact} />
+        {/* <Route exact path="/contacts" component={Contact} /> */}
         <Route exact path="/experiences" component={Experiences} />
         <Route exact path="/recommendations" component={Recommendations} />
         <Route exact path="/projects" component={Projects} />

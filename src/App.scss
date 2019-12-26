@@ -1,5 +1,33 @@
+@font-face {
+  font-family: 'Karla';
+  src: url('./assets/fonts/karla/Karla-Regular.ttf') format('truetype'),
+    url('./assets/fonts/karla/Karla-Italic.ttf') format('truetype'),
+    url('./assets/fonts/karla/Karla-Bold.ttf') format('truetype'),
+    url('./assets/fonts/karla/Karla-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('./assets/fonts/roboto/Roboto-Italic.ttf') format('truetype'),
+    url('./assets/fonts/roboto/Roboto-Bold.ttf') format('truetype'),
+    url('./assets/fonts/roboto/Roboto-BoldItalic.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Lucida Grande';
+  src: url('./assets/fonts/lucidagrande/lucidagrande.ttf') format('truetype'),
+    url('./assets/fonts/lucidagrande/lucidagrandebold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  src: url('./assets/fonts/helvetica/Helvetica400.ttf') format('truetype');
+}
+
 body {
-  font-family: Verdana, Geneva, sans-serif;
+  font-family: 'Karla';
+  color: #525252;
   background-color: #f3efe0; //#f6f5f7;
 }
 
@@ -27,6 +55,7 @@ body {
 
   ul {
     list-style-type: none;
+    margin-top: 150px;
 
     li {
       a {
@@ -36,7 +65,7 @@ body {
         text-decoration: none;
         line-height: 40px;
         font-size: 16px;
-        font-weight: 550;
+        font-weight: bold;
         letter-spacing: 2px;
       }
       a:hover {
@@ -47,15 +76,18 @@ body {
 }
 
 .centralPanel {
-  font-family: Verdana, OpenSans, sans-serif;
-  font-size: 14px;
+  font-family: 'Karla';
+  --font-family: 'Lucida Grande';
+  --font-family: 'Roboto';
+  --font-family: 'Helvetica';
+  font-size: 17px;
   font-style: normal;
   font-variant: normal;
   font-weight: 400;
   max-width: 900px;
-  line-height: 18.4px;
+  --line-height: 18.4px;
   background-attachment: scroll;
-  color: rgb(0, 0, 0);
+  color: #000000;
   padding: 0px 8px;
   margin: 0 auto 0 auto;
   grid-row: 1;
@@ -134,7 +166,7 @@ blockquote:before {
       text-decoration: none;
       line-height: 40px;
       font-size: 16px;
-      font-weight: 550;
+      font-weight: bold;
       letter-spacing: 2px;
     }
     a:hover {
@@ -152,6 +184,17 @@ blockquote:before {
   color: #22a39f;
   margin: 25px 0 20px 0;
   display: block;
+}
+
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  line-height: 30.8px;
+  font-weight: 300;
+  text-align: center;
+  color: #22a39f;
+  display: block;
+  margin: 20px 0 20px 0;
 }
 
 .hr {

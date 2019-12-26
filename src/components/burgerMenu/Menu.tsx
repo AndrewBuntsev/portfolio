@@ -2,6 +2,7 @@ import React from 'react';
 import CSS from 'csstype';
 import MenuItem from './MenuItem';
 import { PAGES } from '../common/pages';
+import SocialMediaPanel from '../SocialMediaPanel';
 
 type Props = { open: boolean; onMenuItemClick(): void };
 type State = {};
@@ -23,7 +24,7 @@ class Menu extends React.Component<Props, State> {
       position: 'fixed',
       top: '5px',
       left: '5px',
-      height: this.props.open ? menuItems.length * 45 + 'px' : 0,
+      height: this.props.open ? menuItems.length * 45 + 130 + 'px' : 0,
       minWidth: '150px',
       maxWidth: '250px',
       width: '50vw',
@@ -36,9 +37,29 @@ class Menu extends React.Component<Props, State> {
     return (
       <div style={containerStyle}>
         {this.props.open
-          ? <ul style={{ listStyleType: 'none' }}>
-              {menuItems}
-            </ul>
+          ? <div>
+              <div
+                style={{
+                  margin: '40px 0 0 10px',
+                  paddingRight: '15px',
+                  fontFamily: 'Roboto',
+                  textAlign: 'center',
+                  fontSize: '14px',
+                  color: '#FFF'
+                }}
+              >
+                Hi, my name is Andrei Buntsev and I'm a senior software
+                developer. Welcome to my personal website!
+              </div>
+
+              <div style={{ textAlign: 'center', margin: '10px 0 0 0' }}>
+                <SocialMediaPanel />
+              </div>
+
+              <ul style={{ listStyleType: 'none' }}>
+                {menuItems}
+              </ul>
+            </div>
           : null}
       </div>
     );

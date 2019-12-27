@@ -75,7 +75,9 @@ class ATSProj extends React.Component {
 
   componentDidMount() {
     $(document).ready(function () {
-      if (!window.$) return;
+      if (!window.$) {
+        window.location.replace('/projects');
+      }
 
       window.$('.ats-zoom-gallery').magnificPopup({
         delegate: 'a',

@@ -435,6 +435,9 @@ class Experiences extends React.Component {
 
   componentDidMount() {
     $(document).ready(function () {
+      if (!window.$) {
+        window.location.href = '/';
+      }
       window.$('.experiences-zoom-gallery').magnificPopup({
         delegate: '.gallery-item',
         type: 'image',

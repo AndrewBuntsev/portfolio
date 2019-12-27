@@ -17,6 +17,7 @@ class PhoenixProj extends React.Component {
           >
             <img
               src={require('./img/Phoenix/PlanningSchedule.png')}
+              alt='Planning Schedule'
               width={THUMBNAIL_WIDTH}
               style={{ float: 'right' }}
             />
@@ -150,6 +151,9 @@ class PhoenixProj extends React.Component {
 
   componentDidMount() {
     $(document).ready(function () {
+      if (!window.$) {
+        window.location.replace('/projects');
+      }
       window.$('.phoenix-zoom-gallery').magnificPopup({
         delegate: 'a',
         type: 'image',

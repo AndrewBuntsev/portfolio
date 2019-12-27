@@ -90,6 +90,9 @@ class OrionProj extends React.Component {
 
   componentDidMount() {
     $(document).ready(function () {
+      if (!window.$) {
+        window.location.replace('/projects');
+      }
       window.$('.phoenix-zoom-gallery').magnificPopup({
         delegate: '.zoom-item',
         type: 'image',

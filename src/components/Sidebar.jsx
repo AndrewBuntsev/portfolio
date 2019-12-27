@@ -4,11 +4,8 @@ import { PAGES } from './common/pages'
 import SocialMediaPanel from './SocialMediaPanel'
 
 class Sidebar extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
-  render () {
+  render() {
     const menuItems = PAGES.map((page, i) =>
       <li key={i}>
         {page.route &&
@@ -16,7 +13,7 @@ class Sidebar extends React.Component {
             {page.title}
           </NavLink>}
         {page.externalLink &&
-          <a href={page.externalLink} target='_blank'>
+          <a href={page.externalLink} target='_blank' rel="noopener noreferrer">
             {page.title}
           </a>}
       </li>
@@ -30,6 +27,7 @@ class Sidebar extends React.Component {
         </div>
         <img
           src={require('../assets/images/ava.jpg')}
+          alt='avatar'
           width='100'
           style={{ borderRadius: '50%', margin: '20px 0px 20px 30px' }}
         />
@@ -45,7 +43,7 @@ class Sidebar extends React.Component {
           Welcome to my personal website!
         </div>
 
-        <div style={{ position: 'absolute', top: '285px', left: '45px' }}>
+        <div style={{ position: 'absolute', top: '285px', left: '35px' }}>
           <SocialMediaPanel />
         </div>
 

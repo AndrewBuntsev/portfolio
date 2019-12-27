@@ -5,11 +5,8 @@ import * as $ from 'jquery'
 const THUMBNAIL_WIDTH = '350px'
 
 class OrionProj extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
-  render () {
+  render() {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
         <h3>Project Description</h3>
@@ -32,13 +29,14 @@ class OrionProj extends React.Component {
           >
             <img
               src={require('./img/Orion/orion.png')}
+              alt='Phoenix Orion'
               width={THUMBNAIL_WIDTH}
               style={{ margin: 'auto', display: 'block' }}
             />
           </a>
         </p>
         <p>
-          <a href='http://orion-demo.andreibuntsev.com:8080/' target='_blank'>
+          <a href='http://orion-demo.andreibuntsev.com:8080/' target='_blank' rel="noopener noreferrer">
             The demo version
           </a>{' '}
           demonstrates some functions. The data is available for a week period.
@@ -47,7 +45,7 @@ class OrionProj extends React.Component {
         <h3>Technical details</h3>
 
         <p>
-          <h4 className='techDetailsSubHeader'>Front End</h4>
+          <span className='techDetailsSubHeader'>Front End</span>
           Phoenix Orion is a React-based web application created with using the
           'create-react-app' tool. <br />
           Redux is used as the state management system. <br />
@@ -58,21 +56,21 @@ class OrionProj extends React.Component {
         </p>
 
         <p>
-          <h4 className='techDetailsSubHeader'>Back End</h4>
+          <span className='techDetailsSubHeader'>Back End</span>
           Backend is based on the NodeJS runtime. <br />
           Backend API is built using ExpressJS. <br />
           In actual application MSSQL Server is used as DB server, but for demo
           purposes a piece of data has been transferred into MongoDB. <br />
           As a logging system used{' '}
-          <a href='https://github.com/winstonjs/winston' target='_blank'>
+          <a href='https://github.com/winstonjs/winston' target='_blank' rel="noopener noreferrer">
             Winston
           </a>.
         </p>
 
         <p>
-          <h4 className='techDetailsSubHeader'>
+          <span className='techDetailsSubHeader'>
             Continuous Integration and Deployment
-          </h4>
+          </span>
           Continuous integration tool: TeamCity. <br />
           Pre-deployment tasks: Octopus Deploy. <br />
           Actual NodeJS deployment: PM2.
@@ -90,7 +88,7 @@ class OrionProj extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       window.$('.phoenix-zoom-gallery').magnificPopup({
         delegate: '.zoom-item',

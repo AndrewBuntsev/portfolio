@@ -9,16 +9,14 @@ type Props = {
 };
 type State = {};
 class RecommendationCard extends React.Component<Props, State> {
-  constructor(props: Props) {
-    super(props);
-  }
 
   render() {
     return (
       <div className="recommendationCard">
-        <a href={this.props.link} target="_blank">
+        <a href={this.props.link} target="_blank" rel="noopener noreferrer">
           <img
             style={{ borderRadius: '50%', marginTop: '15px' }}
+            alt='person'
             src={require('./../assets/recommendations/' + this.props.picture)}
             width="60"
           />

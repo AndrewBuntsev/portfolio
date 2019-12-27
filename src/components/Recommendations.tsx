@@ -1,8 +1,4 @@
 import React from 'react';
-import PhoenixCard from './projects/PhoenixCard';
-import ATSCard from './projects/ATSCard';
-import OrionCard from './projects/OrionCard';
-import { Grid } from '@material-ui/core';
 import RecommendationCard from './RecommendationCard';
 
 class Recommendations extends React.Component {

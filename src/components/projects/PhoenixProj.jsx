@@ -4,11 +4,8 @@ import * as $ from 'jquery'
 const THUMBNAIL_WIDTH = '250px'
 
 class PhoenixProj extends React.Component {
-  constructor (props) {
-    super(props)
-  }
 
-  render () {
+  render() {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
         <h3>Project Description</h3>
@@ -43,6 +40,7 @@ class PhoenixProj extends React.Component {
           >
             <img
               src={require('./img/Phoenix/Catalog.png')}
+              alt='Catalog'
               width={THUMBNAIL_WIDTH}
               style={{ float: 'left' }}
             />
@@ -60,6 +58,7 @@ class PhoenixProj extends React.Component {
           >
             <img
               src={require('./img/Phoenix/PresentationStack.png')}
+              alt='Presentation Stack'
               width={THUMBNAIL_WIDTH}
               style={{ float: 'right' }}
             />
@@ -83,6 +82,7 @@ class PhoenixProj extends React.Component {
           >
             <img
               src={require('./img/Phoenix/MaterialManagement.png')}
+              alt='Material Details'
               width={THUMBNAIL_WIDTH}
               style={{ float: 'left' }}
             />
@@ -100,6 +100,7 @@ class PhoenixProj extends React.Component {
           >
             <img
               src={require('./img/Phoenix/LogAmendReport.png')}
+              alt='Log Amend Report'
               width={THUMBNAIL_WIDTH}
               style={{ float: 'right' }}
             />
@@ -147,7 +148,7 @@ class PhoenixProj extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       window.$('.phoenix-zoom-gallery').magnificPopup({
         delegate: 'a',

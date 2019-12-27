@@ -1,4 +1,4 @@
-import React, { CSSProperties } from 'react'
+import React from 'react'
 import * as $ from 'jquery'
 import ExperienceSection from './ExperienceSection'
 
@@ -11,7 +11,7 @@ const styles = {
 }
 
 class Experiences extends React.Component {
-  render () {
+  render() {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
         <h2 className='title'>Experiences</h2>
@@ -39,7 +39,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Free Code Camp'
-          icon={require('./../../assets/freeCodeCampIcon.png')}
+          icon={require('./../../assets/images/freeCodeCampIcon.png')}
           dates='Apr 2019'
           subtitle='Front End Libraries'
           location='Online'
@@ -53,6 +53,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/fcc-fromtEndLibraries.png')}
+              alt='FreeCodeCamp - Front End Libraries'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -61,7 +62,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Free Code Camp'
-          icon={require('./../../assets/freeCodeCampIcon.png')}
+          icon={require('./../../assets/images/freeCodeCampIcon.png')}
           dates='Feb 2019'
           subtitle='Responsive Web Design'
           location='Online'
@@ -75,6 +76,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/fcc-responsiveWebDesign.png')}
+              alt='FreeCodeCamp - Responsive Web Design'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -83,7 +85,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Free Code Camp'
-          icon={require('./../../assets/freeCodeCampIcon.png')}
+          icon={require('./../../assets/images/freeCodeCampIcon.png')}
           dates='Jan 2019'
           subtitle='JavaScript Algorithms and Data Structures'
           location='Online'
@@ -97,6 +99,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/fcc-algAndDataStruct.png')}
+              alt='FreeCodeCamp - JavaScript Algorithms and Data Structures'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -105,7 +108,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Free Code Camp'
-          icon={require('./../../assets/freeCodeCampIcon.png')}
+          icon={require('./../../assets/images/freeCodeCampIcon.png')}
           dates='Sep 2019'
           subtitle='APIs and Microservices'
           location='Online'
@@ -119,6 +122,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/fcc-APIs.png')}
+              alt='FreeCodeCamp - APIs and Microservices'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -127,7 +131,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Microsoft'
-          icon={require('./../../assets/microsoftIcon.png')}
+          icon={require('./../../assets/images/microsoftIcon.png')}
           dates='Oct 2013'
           subtitle='70-486: Developing ASP.NET MVC Web Applications'
           location='Online'
@@ -141,6 +145,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/ms-MCP.png')}
+              alt='Microsoft Certified Professional'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -150,7 +155,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Microsoft'
-          icon={require('./../../assets/microsoftIcon.png')}
+          icon={require('./../../assets/images/microsoftIcon.png')}
           dates='Dec 2011'
           subtitle='70-511: TS: Windows Applications Development with Microsoft .NET Framework 4'
           location='Online'
@@ -163,7 +168,8 @@ class Experiences extends React.Component {
             title='Microsoft Certified Technology Specialist'
           >
             <img
-              src={require('./img/ms-WinApp.png')} 
+              src={require('./img/ms-WinApp.png')}
+              alt='Microsoft Certified Technology Specialist'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -173,7 +179,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Microsoft'
-          icon={require('./../../assets/microsoftIcon.png')}
+          icon={require('./../../assets/images/microsoftIcon.png')}
           dates='Sep 2011'
           subtitle='70-502: TS: Microsoft .NET Framework 3.5, Windows Presentation Foundation Application Development'
           location='Online'
@@ -184,7 +190,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Microsoft'
-          icon={require('./../../assets/microsoftIcon.png')}
+          icon={require('./../../assets/images/microsoftIcon.png')}
           dates='Sep 2010'
           subtitle='70-505: TS: Microsoft .NET Framework 3.5, Windows Forms Application Development'
           location='Online'
@@ -195,7 +201,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title='Microsoft'
-          icon={require('./../../assets/microsoftIcon.png')}
+          icon={require('./../../assets/images/microsoftIcon.png')}
           dates='Mar 2010'
           subtitle='70-433: TS: Microsoft SQL Server 2008, Database Development'
           location='Online'
@@ -209,6 +215,7 @@ class Experiences extends React.Component {
           >
             <img
               src={require('./img/ms-SQL.png')}
+              alt='Microsoft Certified Technology Specialist'
               width={CERT_WIDTH}
               style={styles.galleryImg}
             />
@@ -426,7 +433,7 @@ class Experiences extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       window.$('.experiences-zoom-gallery').magnificPopup({
         delegate: '.gallery-item',

@@ -33,7 +33,7 @@ class MenuItem extends React.Component<Props, State> {
               {this.props.title}
             </NavLink>}
           {this.props.externalLink &&
-            <a href={this.props.externalLink} target="_blank">
+            <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer">
               {this.props.title}
             </a>}
         </li>

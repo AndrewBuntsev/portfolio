@@ -1,9 +1,6 @@
 import React from 'react';
 
 class About extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
@@ -13,6 +10,7 @@ class About extends React.Component {
 
         <img
           src={require('../assets/images/ava_main.png')}
+          alt='Main Ava'
           width="250"
           style={{ float: 'right', borderRadius: '5px', marginLeft: '10px' }}
         />

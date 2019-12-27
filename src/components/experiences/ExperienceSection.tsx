@@ -74,6 +74,7 @@ export default function ExperienceSection(props: Props) {
         {props.icon &&
           <img
             src={props.icon}
+            alt='experience'
             style={{
               width: '30px',
               borderRadius: '3px',
@@ -106,6 +107,7 @@ export default function ExperienceSection(props: Props) {
             <a
               href={props.link}
               target="_blank"
+              rel="noopener noreferrer"
               style={{ color: '#22A39F', textDecoration: 'none' }}
             >
               {props.link}

@@ -2,7 +2,6 @@ import React from 'react';
 import { Route } from 'react-router-dom';
 
 import About from './About';
-import Contact from './Contact';
 import Projects from './Projects';
 import Recommendations from './Recommendations';
 import PhoenixProj from './projects/PhoenixProj';

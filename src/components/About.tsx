@@ -1,4 +1,5 @@
 import React from 'react';
+import SkillsPanel from './skills/SkillsPanel';
 
 class About extends React.Component {
 
@@ -44,6 +45,7 @@ class About extends React.Component {
 
         <hr className="hr" />
         <h3 className="subtitle">Skills</h3>
+        <SkillsPanel />
 
         <hr className="hr" />
         <h3 className="subtitle">Languages</h3>

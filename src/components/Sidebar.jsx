@@ -1,12 +1,11 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
+// import { NavLink } from 'react-router-dom'
 import { PAGES } from './common/pages'
 import SocialMediaPanel from './SocialMediaPanel'
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from 'react-router-hash-link'
 
 class Sidebar extends React.Component {
-
-  render() {
+  render () {
     const menuItems = PAGES.map((page, i) =>
       <li key={i}>
         {page.route &&
@@ -14,7 +13,7 @@ class Sidebar extends React.Component {
             {page.title}
           </HashLink>}
         {page.externalLink &&
-          <a href={page.externalLink} target='_blank' rel="noopener noreferrer">
+          <a href={page.externalLink} target='_blank' rel='noopener noreferrer'>
             {page.title}
           </a>}
       </li>

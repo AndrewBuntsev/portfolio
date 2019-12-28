@@ -1,5 +1,6 @@
 import React from 'react'
 import * as $ from 'jquery'
+import { ROUTE_PREFIX } from '../../settings'
 
 const THUMBNAIL_WIDTH = '250px'
 
@@ -8,11 +9,11 @@ class PhoenixProj extends React.Component {
   render() {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
-        <h3>Project Description</h3>
+        <h3 id='top'>Project Description</h3>
         <p>
           <a
-            href='/img/projects/Phoenix/PlanningSchedule.png'
-            data-source='img/projects/Phoenix/PlanningSchedule.png'
+            href={ROUTE_PREFIX + '/img/projects/Phoenix/PlanningSchedule.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Phoenix/PlanningSchedule.png'}
             title='Planning Schedule'
           >
             <img
@@ -35,8 +36,8 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='/img/projects/Phoenix/Catalog.png'
-            data-source='img/projects/Phoenix/Catalog.png'
+            href={ROUTE_PREFIX + '/img/projects/Phoenix/Catalog.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Phoenix/Catalog.png'}
             title='Catalog'
           >
             <img
@@ -53,8 +54,8 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='/img/projects/Phoenix/PresentationStack.png'
-            data-source='img/projects/Phoenix/PresentationStack.png'
+            href={ROUTE_PREFIX + '/img/projects/Phoenix/PresentationStack.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Phoenix/PresentationStack.png'}
             title='Presentation Stack'
           >
             <img
@@ -77,8 +78,8 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='/img/projects/Phoenix/MaterialManagement.png'
-            data-source='img/projects/Phoenix/MaterialManagement.png'
+            href={ROUTE_PREFIX + '/img/projects/Phoenix/MaterialManagement.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Phoenix/MaterialManagement.png'}
             title='Material Details'
           >
             <img
@@ -95,8 +96,8 @@ class PhoenixProj extends React.Component {
         </p>
         <p>
           <a
-            href='/img/projects/Phoenix/LogAmendReport.png'
-            data-source='img/projects/Phoenix/LogAmendReport.png'
+            href={ROUTE_PREFIX + '/img/projects/Phoenix/LogAmendReport.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Phoenix/LogAmendReport.png'}
             title='Log Amend Report'
           >
             <img

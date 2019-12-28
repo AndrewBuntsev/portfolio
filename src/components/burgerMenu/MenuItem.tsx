@@ -1,5 +1,6 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
+import { HashLink } from 'react-router-hash-link';
 
 type Props = {
   title: string;
@@ -25,15 +26,18 @@ class MenuItem extends React.Component<Props, State> {
           }}
         >
           {this.props.route &&
-            <NavLink
-              to={this.props.route}
-              activeClassName="active"
+            <HashLink
+              to={this.props.route + '#top'}
               onClick={this.props.onClick}
             >
               {this.props.title}
-            </NavLink>}
+            </HashLink>}
           {this.props.externalLink &&
-            <a href={this.props.externalLink} target="_blank" rel="noopener noreferrer">
+            <a
+              href={this.props.externalLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {this.props.title}
             </a>}
         </li>

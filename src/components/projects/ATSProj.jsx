@@ -6,13 +6,13 @@ class ATSProj extends React.Component {
     return (
       <div>
         <div className='zoom-gallery ats-zoom-gallery'>
-          <h3>Project Details</h3>
+          <h3 id='top'>Project Details</h3>
           <p>
             Automatic Test System is aimed to streamline testing process for
             mobile operators. The system architecture is the following.
             <a
-              href='/img/projects/ATS/Architecture.png'
-              data-source='img/projects/ATS/Architecture.png'
+              href={ROUTE_PREFIX + '/img/projects/ATS/Architecture.png'}
+              data-source={ROUTE_PREFIX + 'img/projects/ATS/Architecture.png'}
               title='ATS Architecture'
             >
               <img

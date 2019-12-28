@@ -1,6 +1,7 @@
 import React from 'react'
 import * as $ from 'jquery'
 import ExperienceSection from './ExperienceSection'
+import { ROUTE_PREFIX } from '../../settings'
 
 const CERT_WIDTH = 100
 const styles = {
@@ -47,8 +48,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/fcc-fromtEndLibraries.png'
-            data-source='img/certs/fcc-fromtEndLibraries.png'
+            href={ROUTE_PREFIX + '/img/certs/fcc-fromtEndLibraries.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/fcc-fromtEndLibraries.png'}
             title='FreeCodeCamp - Front End Libraries'
           >
             <img
@@ -70,8 +71,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/fcc-responsiveWebDesign.png'
-            data-source='img/certs/fcc-responsiveWebDesign.png'
+            href={ROUTE_PREFIX + '/img/certs/fcc-responsiveWebDesign.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/fcc-responsiveWebDesign.png'}
             title='FreeCodeCamp - Responsive Web Design'
           >
             <img
@@ -93,8 +94,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/fcc-algAndDataStruct.png'
-            data-source='img/certs/fcc-algAndDataStruct.png'
+            href={ROUTE_PREFIX + '/img/certs/fcc-algAndDataStruct.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/fcc-algAndDataStruct.png'}
             title='FreeCodeCamp - JavaScript Algorithms and Data Structures'
           >
             <img
@@ -116,8 +117,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/fcc-APIs.png'
-            data-source='img/certs/fcc-APIs.png'
+            href={ROUTE_PREFIX + '/img/certs/fcc-APIs.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/fcc-APIs.png'}
             title='FreeCodeCamp - APIs and Microservices'
           >
             <img
@@ -139,8 +140,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/ms-MCP.png'
-            data-source='img/certs/ms-MCP.png'
+            href={ROUTE_PREFIX + '/img/certs/ms-MCP.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/ms-MCP.png'}
             title='Microsoft Certified Professional'
           >
             <img
@@ -163,8 +164,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/ms-WinApp.png'
-            data-source='img/certs/ms-WinApp.png'
+            href={ROUTE_PREFIX + '/img/certs/ms-WinApp.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/ms-WinApp.png'}
             title='Microsoft Certified Technology Specialist'
           >
             <img
@@ -209,8 +210,8 @@ class Experiences extends React.Component {
         >
           <a
             className='gallery-item'
-            href='/img/certs/ms-SQL.png'
-            data-source='img/certs/ms-SQL.png'
+            href={ROUTE_PREFIX + '/img/certs/ms-SQL.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/ms-SQL.png'}
             title='Microsoft Certified Technology Specialist'
           >
             <img

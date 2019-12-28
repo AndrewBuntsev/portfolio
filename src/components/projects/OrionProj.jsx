@@ -9,7 +9,7 @@ class OrionProj extends React.Component {
   render() {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
-        <h3>Project Description</h3>
+        <h3 id='top'>Project Description</h3>
         <p>
           The Phoenix Orion project represents the reworked version of the old
           fashioned{' '}
@@ -22,8 +22,8 @@ class OrionProj extends React.Component {
         </p>
         <p>
           <a
-            href='/img/projects/Orion/orion.png'
-            data-source='img/projects/Orion/orion.png'
+            href={ROUTE_PREFIX + '/img/projects/Orion/orion.png'}
+            data-source={ROUTE_PREFIX + 'img/projects/Orion/orion.png'}
             title='Phoenix Orion'
             className='zoom-item'
           >

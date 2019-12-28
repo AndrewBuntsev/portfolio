@@ -1,8 +1,9 @@
 import React from 'react'
 import * as $ from 'jquery'
+import { ROUTE_PREFIX } from '../../settings'
 
 class ATSProj extends React.Component {
-  render() {
+  render () {
     return (
       <div>
         <div className='zoom-gallery ats-zoom-gallery'>
@@ -17,7 +18,7 @@ class ATSProj extends React.Component {
             >
               <img
                 src={require('./img/ATS/Architecture.png')}
-                alt="ATS Architecture"
+                alt='ATS Architecture'
                 width='250'
                 style={{ display: 'block', margin: '10px auto 0' }}
               />
@@ -34,7 +35,7 @@ class ATSProj extends React.Component {
             <a
               href='https://developer.android.com/studio/command-line/adb'
               target='_blank'
-              rel="noopener noreferrer"
+              rel='noopener noreferrer'
             >
               {' '}Android Debug Bridge
             </a>{' '}
@@ -60,7 +61,11 @@ class ATSProj extends React.Component {
         <h3 style={{ textAlign: 'center' }}>Technical details</h3>
         <p>Technologies stack: .NET 4.6, C#, WPF, MVVM, SQLite, ADB.</p>
         <p>
-          <a href='https://bitbucket.org/andreibuntsev/ast' target='_blank' rel="noopener noreferrer">
+          <a
+            href='https://bitbucket.org/andreibuntsev/ast'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             https://bitbucket.org/andreibuntsev/ast
           </a>
         </p>
@@ -73,10 +78,10 @@ class ATSProj extends React.Component {
     )
   }
 
-  componentDidMount() {
+  componentDidMount () {
     $(document).ready(function () {
       if (!window.$) {
-        window.location.replace('/projects');
+        window.location.replace('/projects')
       }
 
       window.$('.ats-zoom-gallery').magnificPopup({
@@ -106,7 +111,7 @@ class ATSProj extends React.Component {
             return element.find('img')
           }
         }
-      });
+      })
     })
   }
 }

@@ -1,12 +1,12 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import * as $ from 'jquery'
+import { ROUTE_PREFIX } from '../../settings'
 
 const THUMBNAIL_WIDTH = '350px'
 
 class OrionProj extends React.Component {
-
-  render() {
+  render () {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
         <h3 id='top'>Project Description</h3>
@@ -36,7 +36,11 @@ class OrionProj extends React.Component {
           </a>
         </p>
         <p>
-          <a href='http://orion-demo.andreibuntsev.com:8080/' target='_blank' rel="noopener noreferrer">
+          <a
+            href='http://orion-demo.andreibuntsev.com:8080/'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             The demo version
           </a>{' '}
           demonstrates some functions. The data is available for a week period.
@@ -62,7 +66,11 @@ class OrionProj extends React.Component {
           In actual application MSSQL Server is used as DB server, but for demo
           purposes a piece of data has been transferred into MongoDB. <br />
           As a logging system used{' '}
-          <a href='https://github.com/winstonjs/winston' target='_blank' rel="noopener noreferrer">
+          <a
+            href='https://github.com/winstonjs/winston'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             Winston
           </a>.
         </p>
@@ -88,10 +96,10 @@ class OrionProj extends React.Component {
     )
   }
 
-  componentDidMount() {
+  componentDidMount () {
     $(document).ready(function () {
       if (!window.$) {
-        window.location.replace('/projects');
+        window.location.replace('/projects')
       }
       window.$('.phoenix-zoom-gallery').magnificPopup({
         delegate: '.zoom-item',

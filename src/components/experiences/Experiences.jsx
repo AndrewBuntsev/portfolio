@@ -14,7 +14,7 @@ class Experiences extends React.Component {
   render() {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
-        <h2 className='title'>Experiences</h2>
+        <h2 className='title' id='top'>Experiences</h2>
         <hr className='hr' />
         <h3 className='subtitle'>Educations</h3>
 
@@ -224,8 +224,8 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <hr className='hr' />
-        <h3 className='subtitle'>Careers</h3>
-
+        <h3 className='subtitle' id='careersHeader'>Careers</h3>
+        
         <ExperienceSection
           title='Nine Entertainment Co'
           dates='Oct 2018	- May 2019'

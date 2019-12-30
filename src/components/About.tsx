@@ -52,7 +52,7 @@ class About extends React.Component {
         </P>
 
         <P>
-          At this time my preferable stack was desktop-oriented client-server
+          At that time my preferable stack was desktop-oriented client-server
           apps (.NET, C#, WPF, WCF, MSSQL). Once commencing full time work for
           Channel Nine I found myself really passionate about programming in
           JavaScript and now spend the majority of my time as a Full Stack

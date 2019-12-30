@@ -1,1 +1,1 @@
-export const ROUTE_PREFIX = '/portfolio';
+export const ROUTE_PREFIX = ''; //'/portfolio';

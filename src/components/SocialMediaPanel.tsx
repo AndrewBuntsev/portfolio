@@ -34,7 +34,7 @@ class SocialMediaPanel extends React.Component {
         </a>
 
         <a
-          href="http://andreibuntsev.blogspot.com/"
+          href="https://andreibuntsev.blogspot.com/"
           title="Blogger"
           target="_blank"
           rel="noopener noreferrer"

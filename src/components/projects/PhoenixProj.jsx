@@ -123,20 +123,20 @@ class PhoenixProj extends React.Component {
           about 500 throughout Australia.
         </p>
         <p>
-          Phoenix is client-server application with clean 3-tier architecture.
+          Phoenix is a client-server application with clean 3-tier architecture.
           UI is implemented as WPF Windows Smart Client. Smart client (or thin
           client in other words) is communicating with Application Server (IIS7)
-          where WCF services are hosted. WCF Services are API for all
+          where WCF services are hosted. WCF Services are the APIs for all
           application business logic. Business Logic communicating with
-          Microsoft SQL Server via DataAccess layer (C# class library and SQL
-          Stored Procedures). Application used strong OOP patterns and business
+          Microsoft SQL Server via the DataAccess layer (C# class library and SQL
+          Stored Procedures). Application uses strong OOP patterns and business
           object model.
         </p>
         <p>
           Technologies stack: .NET, C#, WPF, MVVM, WCF, 3-tier architecture,
           Microsoft SQL Server. All application business logic is unit tested
-          with automatic tests (NUnit). That greatly increasing maintainability
-          of source codes. Continuous Integration is implemented via TeamCity
+          with automatic tests (NUnit). That greatly increases maintainability
+          of source code. Continuous Integration is implemented via TeamCity
           that provides one-click deployment into several environments (DEV,
           QAT, UAT, STAGING, PRODUCTION).
         </p>

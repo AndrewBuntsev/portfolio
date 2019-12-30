@@ -33,7 +33,7 @@ class ATSCard extends React.Component {
               ATS (Automatic Test System)
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Desktop Application built with the following techologies: .NET,
+              Desktop Application built using the following technologies: .NET,
               C#, WPF, SQLite, ADB.
             </Typography>
           </CardContent>

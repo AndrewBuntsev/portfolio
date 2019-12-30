@@ -3,7 +3,7 @@ import * as $ from 'jquery'
 import { ROUTE_PREFIX } from '../../settings'
 
 class ATSProj extends React.Component {
-  render () {
+  render() {
     return (
       <div>
         <div className='zoom-gallery ats-zoom-gallery'>
@@ -26,11 +26,11 @@ class ATSProj extends React.Component {
           </p>
         </div>
         <p>
-          The application allows to create scenarios that will be aumatically
+          The application allows to create scenarios that will be automatically
           processed. Every scenario means setup the mobile devices into a
-          specifig mode (2G, 3G, 4G, LTE, Fly Mode), than making calls from/to
-          the devices. The scenario processed automatilly without human
-          interactions. All the commands are send using{' '}
+          specific mode (2G, 3G, 4G, LTE, Fly Mode), then making calls from/to
+          the devices. The scenario processed automatically without human
+          interactions. All the commands are sent using{' '}
           <span>
             <a
               href='https://developer.android.com/studio/command-line/adb'
@@ -40,11 +40,11 @@ class ATSProj extends React.Component {
               {' '}Android Debug Bridge
             </a>{' '}
           </span>
-          utility. Mobile devices connected to PC via USB ports. As a portable
+          utility. Mobile devices are connected to PC via USB ports. As a portable
           data base is used SQLite.
         </p>
         <p>
-          To see the app in action watch the demo video.
+          To see the app in action, watch the demo video.
           <iframe
             src='https://www.youtube.com/embed/RQq3SFGPxgI'
             title='demo'
@@ -61,6 +61,7 @@ class ATSProj extends React.Component {
         <h3 style={{ textAlign: 'center' }}>Technical details</h3>
         <p>Technologies stack: .NET 4.6, C#, WPF, MVVM, SQLite, ADB.</p>
         <p>
+          Source code:
           <a
             href='https://bitbucket.org/andreibuntsev/ast'
             target='_blank'
@@ -78,7 +79,7 @@ class ATSProj extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       if (!window.$) {
         window.location.replace('/projects')

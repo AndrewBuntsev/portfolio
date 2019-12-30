@@ -33,7 +33,7 @@ class PhoenixCard extends React.Component {
               Phoenix
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Desktop Application built with the following techologies: .NET,
+              Desktop Application built using the following technologies: .NET,
               C#, WPF, MVVM, WCF, 3-tier architecture, Microsoft SQL Server.
             </Typography>
           </CardContent>

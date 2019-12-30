@@ -6,7 +6,7 @@ import { ROUTE_PREFIX } from '../../settings'
 const THUMBNAIL_WIDTH = '350px'
 
 class OrionProj extends React.Component {
-  render () {
+  render() {
     return (
       <div className='zoom-gallery phoenix-zoom-gallery'>
         <h3 id='top'>Project Description</h3>
@@ -17,8 +17,8 @@ class OrionProj extends React.Component {
             Phoenix
           </NavLink>{' '}
           desktop app. The main purpose of its creation was to display several
-          presentation stacks on the screen at the same time. Besides that
-          significant performance improvent has been achieved.
+          presentation stacks on the screen at the same time. Besides that,
+          significant performance improvement has been achieved.
         </p>
         <p>
           <a
@@ -96,7 +96,7 @@ class OrionProj extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       if (!window.$) {
         window.location.replace('/projects')

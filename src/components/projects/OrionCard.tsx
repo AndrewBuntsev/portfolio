@@ -33,7 +33,7 @@ class OrionCard extends React.Component {
               Phoenix Orion
             </Typography>
             <Typography variant="body2" color="textSecondary" component="p">
-              Web Application built with the following techologies: JavaSctipt,
+              Web Application built using the following technologies: JavaScript,
               React, Redux, TypeScript, Bootstrap, NodeJS, ExpressJS, PM2
             </Typography>
           </CardContent>

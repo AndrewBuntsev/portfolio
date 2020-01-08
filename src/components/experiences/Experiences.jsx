@@ -1,5 +1,7 @@
 import React from 'react'
+import { HashLink } from 'react-router-hash-link'
 import * as $ from 'jquery'
+
 import ExperienceSection from './ExperienceSection'
 import { ROUTE_PREFIX } from '../../settings'
 
@@ -12,10 +14,12 @@ const styles = {
 }
 
 class Experiences extends React.Component {
-  render() {
+  render () {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
-        <h2 className='title' id='top'>Experiences</h2>
+        <h2 className='title' id='top'>
+          Experiences
+        </h2>
         <hr className='hr' />
         <h3 className='subtitle'>Educations</h3>
 
@@ -225,11 +229,123 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <hr className='hr' />
-        <h3 className='subtitle' id='careersHeader'>Careers</h3>
-        
+        <h3 className='subtitle' id='careersHeader'>
+          Careers
+        </h3>
+
+        <ExperienceSection
+          title=''
+          dates='Feb 2011	- to-date'
+          subtitle='Senior FullStack Developer'
+          location='Australia, Sydney'
+          link='http://www.nine.com.au'
+        >
+          <div>
+            <strong>
+              <i>Project description: </i>
+            </strong>
+            <span>
+              Phoenix - Broadcast management system which is responsible for
+              scheduling of all content that airs on TV Australia-wide.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              As working on the project since 2011, there hardly is a module I
+              did not touch. Besides doing whole the full stack job (creating
+              stored procedures, adding data access layer entities, mastering
+              business logic, configuring WCF and IIS, building UI modules,
+              writing unit tests), my responsibility includes various management
+              functions like planning sprints, splitting work into Jira tickets,
+              reviewing pull requests from other developers, mentoring junior
+              developers etc. Detailed project description and screenshots could
+              be found{' '}
+              <HashLink to='/projects/phoenix#top' activeClassName='active'>
+                here
+              </HashLink>{' '}
+              .
+            </span>
+            <br />
+            <strong>
+              <i>Technologies applied: </i>
+            </strong>
+            <span>.NET 4.7, WPF, MSSQL 2016, WCF, NUnit, TeamCity, Git</span>
+          </div>
+        </ExperienceSection>
+
+        <ExperienceSection
+          title=''
+          dates='May 2019	- to-date'
+          subtitle='Senior FullStack Developer'
+          location='Australia, Sydney'
+          link='http://www.nine.com.au'
+        >
+          <div>
+            <strong>
+              <i>Project description: </i>
+            </strong>
+            <span>
+              Phoenix Orion - Reworked web version of the old-fashioned Phoenix
+              desktop application.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              Initially I came up with the idea of creating Web-based Phoenix in
+              May 2019. After a month of discussions with directors and users I
+              started development from scratch in June 2019 as the only
+              developer. Since October 2019, 2 more guys joined the team on a
+              part-time basis. The{' '}
+              <a
+                href='http://orion-demo.andreibuntsev.com:8080'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                demo version
+              </a>{' '}
+              demonstrates some functions. The data is available for a week
+              period. The first production release has been done in December
+              2019. Phoenix Orion is a React-based web application created with
+              using the 'create-react-app' tool. Redux is used as the state
+              management system. About 80% modules are written in TypeScript.
+              Most used UI elements of 'react-bootstrap' library. Styling is
+              implemented with Sassy CSS (.scss) and inline styles. Backend is
+              based on the NodeJS runtime. Backend API is built using ExpressJS.
+              In actual application MSSQL Server is used as DB server, but for
+              demo purposes a piece of data has been transferred into MongoDB.
+              As a logging system{' '}
+              <a
+                href='https://github.com/winstonjs/winston'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                Winston
+              </a>{' '}
+              is used. Detailed project description and screenshots could be
+              found{' '}
+              <HashLink to='/projects/orion#top' activeClassName='active'>
+                here
+              </HashLink>{' '}
+              .
+            </span>
+            <br />
+            <strong>
+              <i>Technologies applied: </i>
+            </strong>
+            <span>
+              JavaScript, TypeScript, NodeJS, ExpressJS, MSSQL, MongoDB, React,
+              Redux, TeamCity, Octopus Deploy, PM2, Git.
+            </span>
+          </div>
+        </ExperienceSection>
+
         <ExperienceSection
           title='Nine Entertainment Co'
-          dates='Oct 2018	- May 2019'
+          dates='Jun 2016	- May 2019'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
           link='http://9voyager.com.au'
@@ -238,8 +354,22 @@ class Experiences extends React.Component {
             <strong>
               <i>Project description: </i>
             </strong>
+            <span>Saturn - Internal advertisement booking system.</span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
             <span>
-              {' '}Voyager - Australia’s self-serve TV advertising platform.
+              Adding new functions involving full stack work. Server side: MSSQL
+              Server - creating tables and stored procedures, data access layer
+              – building data contracts using entity framework, business logic
+              level – adding / updating logic modules inside complex hierarchical
+              structure using IoC approach (autofac is used as IoC container).
+              Client Side: Creating new / updating existent screens in the
+              desktop application using WPF, strongly following the MVVM
+              pattern, Telerik was the mostly used UI library. As communication
+              layer, WCF has been used, I added / updated contracts, bindings,
+              configured connectivity via WCF config files.
             </span>
             <br />
             <strong>
@@ -252,27 +382,60 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <ExperienceSection
-          title=''
-          dates='Apr 2019	- to-date'
+          title='Nine Entertainment Co'
+          dates='Oct 2018	- May 2019'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
-          link='http://www.nine.com.au'
+          link='http://9voyager.com.au'
         >
           <div>
             <strong>
               <i>Project description: </i>
             </strong>
             <span>
-              Broadcast management system which is responsible for scheduling of
-              all content that airs on TV Australia-wide.
+              Voyager - Australia’s self-serve TV advertising platform.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              Being focused on performance, creating various functions for the
+              web UI using vanilla JS (ES5) targeting for the IE browser. Also
+              building more complex modules using 3D-party libraries like
+              JQuery,{' '}
+              <a
+                href='https://d3js.org/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                D3
+              </a>,{' '}
+              <a
+                href='https://c3js.org/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                C3
+              </a>. Based on that work I created several blog posts for my
+              personal{' '}
+              <a
+                href='https://andreibuntsev.blogspot.com/'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                blog
+              </a>{' '}
+              that could be used as the source of work examples. Also, my
+              responsibility was creating new web services on the server side to
+              provide necessary functionality for the web side.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
             <span>
-              .NET 4.7, WPF, MSSQL 2016, WCF, NUnit, TeamCity, Git, NodeJS,
-              ReactJS, Redux, JavaScript, TypeScript
+              .NET Core 2.2, MSSQL 2019, WCF, Git, JavaScript, IdentityServer
             </span>
           </div>
         </ExperienceSection>
@@ -434,10 +597,10 @@ class Experiences extends React.Component {
     )
   }
 
-  componentDidMount() {
+  componentDidMount () {
     $(document).ready(function () {
       if (!window.$) {
-        window.location.href = '/';
+        window.location.href = '/'
       }
       window.$('.experiences-zoom-gallery').magnificPopup({
         delegate: '.gallery-item',

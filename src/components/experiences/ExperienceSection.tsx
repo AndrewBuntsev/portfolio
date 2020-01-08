@@ -37,7 +37,8 @@ const styles: {
     fontSize: '15px',
     lineHeight: '24.6px',
     color: '#434242',
-    margin: '0 0 10px 0'
+    margin: '0 0 10px 0',
+    textAlign: 'justify'
   },
   locationLink: {
     fontFamily: '"Open Sans", sans-serif',
@@ -74,7 +75,7 @@ export default function ExperienceSection(props: Props) {
         {props.icon &&
           <img
             src={props.icon}
-            alt='experience'
+            alt="experience"
             style={{
               width: '30px',
               borderRadius: '3px',

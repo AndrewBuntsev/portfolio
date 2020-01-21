@@ -5,7 +5,7 @@ import SocialMediaPanel from './SocialMediaPanel'
 import { HashLink } from 'react-router-hash-link'
 
 class Sidebar extends React.Component {
-  render () {
+  render() {
     const menuItems = PAGES.map((page, i) =>
       <li key={i}>
         {page.route &&
@@ -50,6 +50,25 @@ class Sidebar extends React.Component {
         <ul>
           {menuItems}
         </ul>
+
+        <div style={{ position: 'absolute', bottom: '60px', color: '#808080', left: '80px', }}>
+          <div>Copyright @ 2020</div>
+          <div style={{ margin: '3px 0 0 3px' }}>
+            <div style={{ float: 'left' }}> Made with React</div>
+            <div style={{ float: 'right' }}>
+              <img src={require('./skills/img/react.png')} alt='' width='20' />
+            </div>
+            <div>
+              <a
+                href='https://github.com/AndrewBuntsev/portfolio'
+                target='_blank'
+                rel='noopener noreferrer'
+                style={{ marginLeft: '10px', color: '#808080', textDecoration: 'underline' }}>
+                Source Code
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     )
   }

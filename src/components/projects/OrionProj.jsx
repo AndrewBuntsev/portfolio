@@ -81,7 +81,14 @@ class OrionProj extends React.Component {
           </span>
           Continuous integration tool: TeamCity. <br />
           Pre-deployment tasks: Octopus Deploy. <br />
-          Actual NodeJS deployment: PM2.
+          Actual NodeJS deployment: PM2. <br />
+          Source Code: <a
+            href='https://github.com/AndrewBuntsev/phoenix-pres-centre/tree/qat'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            https://github.com/AndrewBuntsev/phoenix-pres-centre/tree/qat
+          </a>.
         </p>
 
         <h3>My Role in the project</h3>

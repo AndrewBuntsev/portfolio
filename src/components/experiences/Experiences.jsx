@@ -14,7 +14,7 @@ const styles = {
 }
 
 class Experiences extends React.Component {
-  render() {
+  render () {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
         <h2 className='title' id='top'>
@@ -343,8 +343,6 @@ class Experiences extends React.Component {
           </div>
         </ExperienceSection>
 
-
-
         <ExperienceSection
           title=''
           dates='Jun 2016	- May 2019'
@@ -365,10 +363,10 @@ class Experiences extends React.Component {
               Adding new functions involving full stack work. Server side: MSSQL
               Server - creating tables and stored procedures, data access layer
               – building data contracts using entity framework, business logic
-              level – adding / updating logic modules inside complex hierarchical
-              structure using IoC approach (autofac is used as IoC container).
-              Client Side: Creating new / updating existent screens in the
-              desktop application using WPF, strongly following the MVVM
+              level – adding / updating logic modules inside complex
+              hierarchical structure using IoC approach (autofac is used as IoC
+              container). Client Side: Creating new / updating existent screens
+              in the desktop application using WPF, strongly following the MVVM
               pattern, Telerik was the mostly used UI library. As communication
               layer, WCF has been used, I added / updated contracts, bindings,
               configured connectivity via WCF config files.
@@ -477,22 +475,22 @@ class Experiences extends React.Component {
               <i>Project description: </i>
             </strong>
             <span>
-              Science Data Studio - Desktop Application for plugging in external libraries.
+              Science Data Studio - Desktop Application for plugging in external
+              libraries.
             </span>
             <br />
             <strong>
               <i>My Role: </i>
             </strong>
             <span>
-              Building user interfaces, creating plugin interfaces, writing unit tests.
+              Building user interfaces, creating plugin interfaces, writing unit
+              tests.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>
-              .NET 3.5, C#, WPF, DevExpress, Unit Testing.
-            </span>
+            <span>.NET 3.5, C#, WPF, DevExpress, Unit Testing.</span>
           </div>
         </ExperienceSection>
 
@@ -508,28 +506,28 @@ class Experiences extends React.Component {
               <i>Project description: </i>
             </strong>
             <span>
-              Stocker - Accounting, management of the store stock including recording deliveries, sells etc.
+              Stocker - Accounting, management of the store stock including
+              recording deliveries, sells etc.
             </span>
             <br />
             <strong>
               <i>My Role: </i>
             </strong>
             <span>
-              Working along with a team leader, reworking .NET 1.1 stocker desktop application written in Visual Basic .NET into the
-  modern WPF-based application.
+              Working along with a team leader, reworking .NET 1.1 stocker
+              desktop application written in Visual Basic .NET into the modern
+              WPF-based application.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>
-              .NET 3.5, C#, WPF, MSSQL Server 2005.
-            </span>
+            <span>.NET 3.5, C#, WPF, MSSQL Server 2005.</span>
           </div>
         </ExperienceSection>
 
         <ExperienceSection
-          title='TechnoLogica'
+          title='TechnoLogika'
           dates='Nov 2007	- Nov 2008'
           subtitle='Front End Developer'
           location='Russian Federation, Novosibirsk'
@@ -540,23 +538,23 @@ class Experiences extends React.Component {
               <i>Project description: </i>
             </strong>
             <span>
-              Blue Archer - Building web sites for the customer from Pittsburgh, USA ( https://www.bluearcher.com/ ).
+              Blue Archer - Building web sites for the customer from Pittsburgh,
+              USA ( https://www.bluearcher.com/ ).
             </span>
             <br />
             <strong>
               <i>My Role: </i>
             </strong>
             <span>
-              Working along with a designer, have built more than 20 simple websites during the entire period. Some of
-  websites were based on the existent content management system.
+              Working along with a designer, have built more than 20 simple
+              websites during the entire period. Some of websites were based on
+              the existent content management system.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>
-              ASP, JavaScript, VBScript, IIS, HTML, CSS.
-            </span>
+            <span>ASP, JavaScript, VBScript, IIS, HTML, CSS.</span>
           </div>
         </ExperienceSection>
 
@@ -572,23 +570,23 @@ class Experiences extends React.Component {
               <i>Project description: </i>
             </strong>
             <span>
-              ASF - Digital version of Faeroese-English dictionary for a customer from Faeroe Islands.
+              ASF - Digital version of Faeroese-English dictionary for a
+              customer from Faeroe Islands.
             </span>
             <br />
             <strong>
               <i>My Role: </i>
             </strong>
             <span>
-              Working and being totally responsible for CD-edition of the dictionary. Whole app included Web-edition,
-  Desktop App and CD-edition.
+              Working and being totally responsible for CD-edition of the
+              dictionary. Whole app included Web-edition, Desktop App and
+              CD-edition.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>
-              .NET 3.0, C#, XML, Windows Forms, TFS.
-            </span>
+            <span>.NET 3.0, C#, XML, Windows Forms, TFS.</span>
           </div>
         </ExperienceSection>
 
@@ -635,7 +633,7 @@ class Experiences extends React.Component {
     )
   }
 
-  componentDidMount() {
+  componentDidMount () {
     $(document).ready(function () {
       if (!window.$) {
         window.location.href = '/'

@@ -14,7 +14,7 @@ const styles = {
 }
 
 class Experiences extends React.Component {
-  render () {
+  render() {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
         <h2 className='title' id='top'>
@@ -234,49 +234,7 @@ class Experiences extends React.Component {
         </h3>
 
         <ExperienceSection
-          title=''
-          dates='Feb 2011	- to-date'
-          subtitle='Senior FullStack Developer'
-          location='Australia, Sydney'
-          link='http://www.nine.com.au'
-        >
-          <div>
-            <strong>
-              <i>Project description: </i>
-            </strong>
-            <span>
-              Phoenix - Broadcast management system which is responsible for
-              scheduling of all content that airs on TV Australia-wide.
-            </span>
-            <br />
-            <strong>
-              <i>My Role: </i>
-            </strong>
-            <span>
-              As working on the project since 2011, there hardly is a module I
-              did not touch. Besides doing whole the full stack job (creating
-              stored procedures, adding data access layer entities, mastering
-              business logic, configuring WCF and IIS, building UI modules,
-              writing unit tests), my responsibility includes various management
-              functions like planning sprints, splitting work into Jira tickets,
-              reviewing pull requests from other developers, mentoring junior
-              developers etc. Detailed project description and screenshots could
-              be found{' '}
-              <HashLink to='/projects/phoenix#top' activeClassName='active'>
-                here
-              </HashLink>{' '}
-              .
-            </span>
-            <br />
-            <strong>
-              <i>Technologies applied: </i>
-            </strong>
-            <span>.NET 4.7, WPF, MSSQL 2016, WCF, NUnit, TeamCity, Git</span>
-          </div>
-        </ExperienceSection>
-
-        <ExperienceSection
-          title=''
+          title='Nine Entertainment Co'
           dates='May 2019	- to-date'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
@@ -344,11 +302,55 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <ExperienceSection
-          title='Nine Entertainment Co'
+          title=''
+          dates='Feb 2011	- to-date'
+          subtitle='Senior FullStack Developer'
+          location='Australia, Sydney'
+          link='http://www.nine.com.au'
+        >
+          <div>
+            <strong>
+              <i>Project description: </i>
+            </strong>
+            <span>
+              Phoenix - Broadcast management system which is responsible for
+              scheduling of all content that airs on TV Australia-wide.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              As working on the project since 2011, there hardly is a module I
+              did not touch. Besides doing whole the full stack job (creating
+              stored procedures, adding data access layer entities, mastering
+              business logic, configuring WCF and IIS, building UI modules,
+              writing unit tests), my responsibility includes various management
+              functions like planning sprints, splitting work into Jira tickets,
+              reviewing pull requests from other developers, mentoring junior
+              developers etc. Detailed project description and screenshots could
+              be found{' '}
+              <HashLink to='/projects/phoenix#top' activeClassName='active'>
+                here
+              </HashLink>{' '}
+              .
+            </span>
+            <br />
+            <strong>
+              <i>Technologies applied: </i>
+            </strong>
+            <span>.NET 4.7, WPF, MSSQL 2016, WCF, NUnit, TeamCity, Git</span>
+          </div>
+        </ExperienceSection>
+
+
+
+        <ExperienceSection
+          title=''
           dates='Jun 2016	- May 2019'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
-          link='http://9voyager.com.au'
+          link='http://www.nine.com.au'
         >
           <div>
             <strong>
@@ -382,7 +384,7 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <ExperienceSection
-          title='Nine Entertainment Co'
+          title=''
           dates='Oct 2018	- May 2019'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
@@ -441,11 +443,11 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <ExperienceSection
-          title='Geoffrey Nathan Consulting'
-          dates='Jan 2018	- Apr 2019'
-          subtitle='Senior FullStack Developer for Nine Network Australia'
+          title='AEXSoft'
+          dates='Feb 2010	- Dec 2017'
+          subtitle='Full Stack Developer'
           location='Australia, Sydney'
-          link='https://www.geoffreynathan.com/'
+          link='http://aexsoft.com/'
         >
           <div>
             <strong>
@@ -464,93 +466,129 @@ class Experiences extends React.Component {
         </ExperienceSection>
 
         <ExperienceSection
-          title='Asia-Australia Technology'
-          dates='Feb 2011	- Dec 2017'
-          subtitle='Senior FullStack Developer for Nine Network Australia'
-          location='Australia, Sydney'
-          link='http://www.nine.com.au'
+          title=''
+          dates='Apr 2009	- Jan 2010'
+          subtitle='Full Stack Developer'
+          location='Russian Federation, Novosibirsk'
+          link='http://aexsoft.com/'
         >
           <div>
             <strong>
               <i>Project description: </i>
             </strong>
             <span>
-              Broadcast management system which is responsible for scheduling of
-              all content that airs on TV Australia-wide.
+              Science Data Studio - Desktop Application for plugging in external libraries.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              Building user interfaces, creating plugin interfaces, writing unit tests.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>.NET 4.0, WPF, MSSQL 2014, WCF, NUnit, TeamCity.</span>
+            <span>
+              .NET 3.5, C#, WPF, DevExpress, Unit Testing.
+            </span>
           </div>
         </ExperienceSection>
 
         <ExperienceSection
           title=''
-          dates='Oct 2009	- Apr 2013'
-          subtitle='FullStack Developer at Independent Reserve'
-          location='Australia, Sydney'
-          link='https://www.independentreserve.com'
+          dates='Nov 2008	- Apr 2009'
+          subtitle='Full Stack Developer'
+          location='Russian Federation, Novosibirsk'
+          link='http://aexsoft.com/'
         >
           <div>
             <strong>
               <i>Project description: </i>
             </strong>
             <span>
-              The BitCoin market platform providing currency online exchange and
-              JSON based API for third-party software developers.
+              Stocker - Accounting, management of the store stock including recording deliveries, sells etc.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              Working along with a team leader, reworking .NET 1.1 stocker desktop application written in Visual Basic .NET into the
+  modern WPF-based application.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>ASP.NET MVC, RabbitMQ, Erlang, MSSQL 2014</span>
+            <span>
+              .NET 3.5, C#, WPF, MSSQL Server 2005.
+            </span>
+          </div>
+        </ExperienceSection>
+
+        <ExperienceSection
+          title='TechnoLogica'
+          dates='Nov 2007	- Nov 2008'
+          subtitle='Front End Developer'
+          location='Russian Federation, Novosibirsk'
+          link='https://www.technologika.ru/'
+        >
+          <div>
+            <strong>
+              <i>Project description: </i>
+            </strong>
+            <span>
+              Blue Archer - Building web sites for the customer from Pittsburgh, USA ( https://www.bluearcher.com/ ).
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              Working along with a designer, have built more than 20 simple websites during the entire period. Some of
+  websites were based on the existent content management system.
+            </span>
+            <br />
+            <strong>
+              <i>Technologies applied: </i>
+            </strong>
+            <span>
+              ASP, JavaScript, VBScript, IIS, HTML, CSS.
+            </span>
           </div>
         </ExperienceSection>
 
         <ExperienceSection
           title=''
-          dates='Sep 2008	- Oct 2009'
-          subtitle='Front-end Developer for GPGUIDE PARTNERS LLP'
-          location='Australia, Sydney'
-          link='https://www.gpguide.com'
+          dates='May 2007	- Nov 2007'
+          subtitle='Front End Developer'
+          location='Russian Federation, Novosibirsk'
+          link='https://www.technologika.ru/'
         >
           <div>
             <strong>
               <i>Project description: </i>
             </strong>
             <span>
-              Information web resource for all Formula I data and statistics.
+              ASF - Digital version of Faeroese-English dictionary for a customer from Faeroe Islands.
             </span>
             <br />
             <strong>
-              <i>Technologies applied: </i>
-            </strong>
-            <span>ASP.NET, HTML, JavaScript.</span>
-          </div>
-        </ExperienceSection>
-
-        <ExperienceSection
-          title=''
-          dates='Jun 2007	- Mar 2011'
-          subtitle='Front-end /Back-end Developer at Plutonium'
-          location='Australia, Sydney'
-          link='http://plu.asiaaustraliatech.com'
-        >
-          <div>
-            <strong>
-              <i>Project description: </i>
+              <i>My Role: </i>
             </strong>
             <span>
-              Corporate task tracking system: task management, time management,
-              sprint planning, email notification system.
+              Working and being totally responsible for CD-edition of the dictionary. Whole app included Web-edition,
+  Desktop App and CD-edition.
             </span>
             <br />
             <strong>
               <i>Technologies applied: </i>
             </strong>
-            <span>ASP.NET, HTML, JavaScript, MSSQL</span>
+            <span>
+              .NET 3.0, C#, XML, Windows Forms, TFS.
+            </span>
           </div>
         </ExperienceSection>
 
@@ -597,7 +635,7 @@ class Experiences extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       if (!window.$) {
         window.location.href = '/'

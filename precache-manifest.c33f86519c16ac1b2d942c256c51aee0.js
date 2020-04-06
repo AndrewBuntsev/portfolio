@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "031a0645b1105ce047ebcffbf0da8440",
+    "revision": "2b08f9bbb078a285195d67dd64215066",
     "url": "/index.html"
   },
   {
-    "revision": "94d0b8871ffcd1c71ab4",
+    "revision": "c5c9bd3e678d066da091",
     "url": "/static/css/main.123ce489.chunk.css"
   },
   {
-    "revision": "15127b9528fc42473a3f",
-    "url": "/static/js/2.ad3924a3.chunk.js"
+    "revision": "cb5a9c98338c1f8cc363",
+    "url": "/static/js/2.e16a4842.chunk.js"
   },
   {
-    "revision": "94d0b8871ffcd1c71ab4",
-    "url": "/static/js/main.50226a72.chunk.js"
+    "revision": "c5c9bd3e678d066da091",
+    "url": "/static/js/main.593f7ffb.chunk.js"
   },
   {
     "revision": "0a11d3b02c59f0d577a4",
@@ -102,6 +102,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "5760f9ee988dc5e041b0788062f1fe31",
     "url": "/static/media/cc.5760f9ee.png"
+  },
+  {
+    "revision": "94f230ba0571aef50b85f8bf98862e93",
+    "url": "/static/media/cs50-reactNative.94f230ba.png"
+  },
+  {
+    "revision": "4089502230d0af4ea29c55d83c142f7f",
+    "url": "/static/media/cs50Icon.40895022.png"
   },
   {
     "revision": "ab7da72ab46e1af73d2d425164b0e1ef",

@@ -43,6 +43,29 @@ class Experiences extends React.Component {
         <h3 className='subtitle'>Certifications</h3>
 
         <ExperienceSection
+          title='CS50 Harvard'
+          icon={require('./../../assets/images/cs50Icon.png')}
+          dates='Apr 2020'
+          subtitle='Mobile App Development with React Native'
+          location='Online'
+          link='https://certificates.cs50.io/c1ef2edd-64c9-49d0-8221-33737f0012c5.pdf'
+        >
+          <a
+            className='gallery-item'
+            href={ROUTE_PREFIX + '/img/certs/cs50-reactNative.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/cs50-reactNative.png'}
+            title='CS50 Harvard - React Native'
+          >
+            <img
+              src={require('./img/cs50-reactNative.png')}
+              alt='CS50 Harvard - React Native'
+              width={CERT_WIDTH}
+              style={styles.galleryImg}
+            />
+          </a>
+        </ExperienceSection>
+
+        <ExperienceSection
           title='Free Code Camp'
           icon={require('./../../assets/images/freeCodeCampIcon.png')}
           dates='Apr 2019'

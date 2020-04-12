@@ -8,6 +8,7 @@ export default function SkillsPanel() {
       <SkillsGroup title="Front End">
         <SkillCard title="JavaScript" img={require('./img/js.png')} />
         <SkillCard title="ReactJS" img={require('./img/react.png')} />
+        <SkillCard title="React Native" img={require('./img/react.png')} />
         <SkillCard title="Redux" img={require('./img/redux.png')} />
         <SkillCard title="TypeScript" img={require('./img/typescript.png')} />
         <SkillCard title="HTML 5" img={require('./img/html.png')} />

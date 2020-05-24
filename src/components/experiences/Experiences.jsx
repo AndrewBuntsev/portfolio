@@ -14,7 +14,7 @@ const styles = {
 }
 
 class Experiences extends React.Component {
-  render () {
+  render() {
     return (
       <div className='zoom-gallery experiences-zoom-gallery'>
         <h2 className='title' id='top'>
@@ -41,6 +41,29 @@ class Experiences extends React.Component {
 
         <hr className='hr' />
         <h3 className='subtitle'>Certifications</h3>
+
+        <ExperienceSection
+          title='Amazon'
+          icon={require('./../../assets/images/aws.jpg')}
+          dates='May 2020'
+          subtitle='AWS Developer - Building on AWS'
+          location='Online'
+          link='https://courses.edx.org/certificates/060ad7264624457d8e959424d1b8a7d4'
+        >
+          <a
+            className='gallery-item'
+            href={ROUTE_PREFIX + '/img/certs/AWS-build.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/AWS-build.png'}
+            title='AWS Developer - Building on AWS'
+          >
+            <img
+              src={require('./img/AWS-build.png')}
+              alt='AWS Developer - Building on AWS'
+              width={CERT_WIDTH}
+              style={styles.galleryImg}
+            />
+          </a>
+        </ExperienceSection>
 
         <ExperienceSection
           title='CS50 Harvard'
@@ -656,7 +679,7 @@ class Experiences extends React.Component {
     )
   }
 
-  componentDidMount () {
+  componentDidMount() {
     $(document).ready(function () {
       if (!window.$) {
         window.location.href = '/'

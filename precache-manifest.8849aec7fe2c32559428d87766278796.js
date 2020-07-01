@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d368e9d3f456a11c7d94346ef5fed0d9",
+    "revision": "e1448ba8da1b4e1ec777c4c60119307a",
     "url": "/index.html"
   },
   {
-    "revision": "af2582b00bbab7c22ac8",
+    "revision": "88b18e45d2ff1f1e37d8",
     "url": "/static/css/main.123ce489.chunk.css"
   },
   {
-    "revision": "e0a68f30f32d66909a59",
-    "url": "/static/js/2.974fd25e.chunk.js"
+    "revision": "3b5f7d790fbf84722938",
+    "url": "/static/js/2.6d3dc6c5.chunk.js"
   },
   {
-    "revision": "af2582b00bbab7c22ac8",
-    "url": "/static/js/main.7bcc5daa.chunk.js"
+    "revision": "88b18e45d2ff1f1e37d8",
+    "url": "/static/js/main.6c09fd6d.chunk.js"
   },
   {
     "revision": "0a11d3b02c59f0d577a4",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a1dab8c8fdbbb6cdb4a5e44fa4ba1663",
     "url": "/static/media/AWS-build.a1dab8c8.png"
+  },
+  {
+    "revision": "5e82f2bbe41a5823adfe0e6fc55566bd",
+    "url": "/static/media/AWS-deploy.5e82f2bb.png"
   },
   {
     "revision": "79c5dc8aa5af5f8b76028185f31b93af",

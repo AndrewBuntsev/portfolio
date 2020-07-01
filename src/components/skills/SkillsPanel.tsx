@@ -40,6 +40,7 @@ export default function SkillsPanel() {
       </SkillsGroup>
 
       <SkillsGroup title="Deployment">
+        <SkillCard title="AWS" img={require('./img/aws.jpg')} />
         <SkillCard title="Teamcity" img={require('./img/teamcity.png')} />
         <SkillCard title="Octopus Deploy" img={require('./img/octopus.png')} />
         <SkillCard title="PM2" img={require('./img/pm2.png')} />

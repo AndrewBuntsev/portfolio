@@ -45,6 +45,29 @@ class Experiences extends React.Component {
         <ExperienceSection
           title='Amazon'
           icon={require('./../../assets/images/aws.jpg')}
+          dates='June 2020'
+          subtitle='AWS Developer - Deploying on AWS'
+          location='Online'
+          link='https://courses.edx.org/certificates/43af56cc713b49249c5216e31ea49726'
+        >
+          <a
+            className='gallery-item'
+            href={ROUTE_PREFIX + '/img/certs/AWS-deploy.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/AWS-deploy.png'}
+            title='AWS Developer - Deploying on AWS'
+          >
+            <img
+              src={require('./img/AWS-deploy.png')}
+              alt='AWS Developer - Deploying on AWS'
+              width={CERT_WIDTH}
+              style={styles.galleryImg}
+            />
+          </a>
+        </ExperienceSection>
+
+        <ExperienceSection
+          title='Amazon'
+          icon={require('./../../assets/images/aws.jpg')}
           dates='May 2020'
           subtitle='AWS Developer - Building on AWS'
           location='Online'

@@ -63,7 +63,7 @@ class TILProj extends React.Component {
             Continuous Integration and Deployment
           </span>
           AWS.<br />
-          Services used: CodeDeploy, CodePipeline, EC2, RDS, S3<br />
+          Services used: CodeDeploy, CodePipeline, EC2, RDS, S3, Cognito<br />
           Source Code: <a
             href='https://github.com/AndrewBuntsev/til'
             target='_blank'

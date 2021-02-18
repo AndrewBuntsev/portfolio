@@ -15,21 +15,20 @@ export default function SkillsPanel() {
         <SkillCard title="CSS 3" img={require('./img/css.png')} />
         <SkillCard title="SCSS" img={require('./img/scss.png')} />
         <SkillCard title="C #" img={require('./img/csharp.png')} />
+        <SkillCard title="Aurelia" img={require('./img/aurelia.svg')} />
       </SkillsGroup>
 
       <SkillsGroup title="Back End">
         <SkillCard title="NodeJS" img={require('./img/nodejs.svg')} />
-        <SkillCard title="ExpressJS" img={require('./img/express.png')} />
+        <SkillCard title="AWS" img={require('./img/aws.jpg')} />
         <SkillCard title="Microsoft .NET" img={require('./img/net.png')} />
       </SkillsGroup>
 
       <SkillsGroup title="Databases">
-        <SkillCard
-          title="Microsoft SQL Server"
-          img={require('./img/mssql.svg')}
-        />
+        <SkillCard title="Microsoft SQL Server" img={require('./img/mssql.svg')} />
         <SkillCard title="MongoDB" img={require('./img/mongo.png')} />
         <SkillCard title="SQLite" img={require('./img/sqlite.png')} />
+        <SkillCard title="DynamoDB" img={require('./img/dynamodb.png')} />
       </SkillsGroup>
 
       <SkillsGroup title="Version Control">

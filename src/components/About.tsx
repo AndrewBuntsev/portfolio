@@ -22,7 +22,7 @@ class About extends React.Component {
         <hr className="hr" />
 
         <img
-          src={require('../assets/images/ava_main.png')}
+          src={require('../assets/images/new_ava.jpg')}
           alt="Main Ava"
           width="250"
           style={{ float: 'right', borderRadius: '5px', marginLeft: '10px' }}
@@ -61,6 +61,14 @@ class About extends React.Component {
             apps
           </NavLink>{' '}
           using NodeJS, ExpressJS, React, Redux & TypeScript technologies.
+        </P>
+
+        <P>
+          (2021 Update) Since Oct 2020, I have been working full-time on the very promising StartUp
+          that aimed manufactoring and distributing smart thermostats {' '}(
+          <NavLink to="/projects/ml" style={linkStyle}>
+            Details
+          </NavLink>).
         </P>
 
         <hr className="hr" />

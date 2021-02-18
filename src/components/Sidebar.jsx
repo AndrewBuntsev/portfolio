@@ -52,7 +52,7 @@ class Sidebar extends React.Component {
         </ul>
 
         <div style={{ position: 'absolute', bottom: '60px', color: '#808080', left: '80px', }}>
-          <div>Copyright @ 2020</div>
+          <div>Copyright @ 2021</div>
           <div style={{ margin: '3px 0 0 3px' }}>
             <div style={{ float: 'left' }}> Made with React</div>
             <div style={{ float: 'right' }}>

@@ -303,8 +303,43 @@ class Experiences extends React.Component {
         </h3>
 
         <ExperienceSection
+          title='Milieu Labs'
+          dates='Oct 2020	- to-date'
+          subtitle='Cloud Engineer'
+          location='Australia, Sydney'
+          link='http://TBC'
+        >
+          <div>
+            <strong>
+              <i>Project description: </i>
+            </strong>
+            <span>
+              Manufacturing & distributing own smart thermostat.
+            </span>
+            <br />
+            <strong>
+              <i>My Role: </i>
+            </strong>
+            <span>
+              <br />
+              - AWS engineering, design and programming including (but not limited by) the following services:<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- IoT Core (MQTT) is used as a main telemetry and state management system;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- Lambda & API Gateway are used as REST API;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- DynamoDB is a data base;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- Cognito is used for managing user pool and for OAuth2 authentication;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- CloudFront for hosting static internal website;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- S3, Route53, IAM, SNS, CertificateManager, CloudWatch, …;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;- Serverless deployment.<br />
+              - Web development (device dashboard), technologies used: Aurelia, TypeScript, D3, IoT, Cognito, gulp.<br />
+              - Thermostat hub GUI development, technologies used: JavaScript, TypeScript, D3.<br />
+              - Integration with Alexa & Google Assistant.
+            </span>
+          </div>
+        </ExperienceSection>
+
+        <ExperienceSection
           title='Nine Entertainment Co'
-          dates='May 2019	- to-date'
+          dates='May 2019	- Sep 2020'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
           link='http://www.nine.com.au'
@@ -372,7 +407,7 @@ class Experiences extends React.Component {
 
         <ExperienceSection
           title=''
-          dates='Feb 2011	- to-date'
+          dates='Feb 2011	- Sep 2020'
           subtitle='Senior FullStack Developer'
           location='Australia, Sydney'
           link='http://www.nine.com.au'

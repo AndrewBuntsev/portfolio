@@ -12,6 +12,8 @@
     "@types/react": "16.9.2",
     "@types/react-dom": "16.9.0",
     "@types/react-router-dom": "4.3.5",
+    "browserslist": "^4.16.3",
+    "caniuse-lite": "^1.0.30001183",
     "jquery": "3.4.1",
     "node-sass": "4.12.0",
     "react": "16.9.0",
@@ -46,7 +48,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^2.1.1"
+    "gh-pages": "^2.2.0"
   },
   "homepage": "http://andreibuntsev.com"
 }

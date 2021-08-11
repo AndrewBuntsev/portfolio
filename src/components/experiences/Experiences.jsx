@@ -45,6 +45,29 @@ class Experiences extends React.Component {
         <ExperienceSection
           title='Amazon'
           icon={require('./../../assets/images/aws.jpg')}
+          dates='August 2021'
+          subtitle='AWS Certified Solutions Architect – Associate'
+          location='Online'
+          link='https://www.credly.com/badges/9815a479-dbd0-47bd-a77a-3595c458f0c5?source=linked_in_profile'
+        >
+          <a
+            className='gallery-item'
+            href={ROUTE_PREFIX + '/img/certs/AWS-architect.png'}
+            data-source={ROUTE_PREFIX + 'img/certs/AWS-architect.png'}
+            title='AWS Certified Solutions Architect – Associate'
+          >
+            <img
+              src={require('./img/AWS-architect.png')}
+              alt='AWS Certified Solutions Architect – Associate'
+              width={CERT_WIDTH}
+              style={styles.galleryImg}
+            />
+          </a>
+        </ExperienceSection>
+
+        <ExperienceSection
+          title='Amazon'
+          icon={require('./../../assets/images/aws.jpg')}
           dates='June 2020'
           subtitle='AWS Developer - Deploying on AWS'
           location='Online'
@@ -307,7 +330,7 @@ class Experiences extends React.Component {
           dates='Oct 2020	- to-date'
           subtitle='Cloud Engineer'
           location='Australia, Sydney'
-          link='http://TBC'
+          link='https://www.milieulabs.com.au'
         >
           <div>
             <strong>
@@ -389,7 +412,7 @@ class Experiences extends React.Component {
               </a>{' '}
               is used. Detailed project description and screenshots could be
               found{' '}
-              <HashLink to='/projects/orion#top' activeClassName='active'>
+              <HashLink to='/projects/orion#top'>
                 here
               </HashLink>{' '}
               .
@@ -434,7 +457,7 @@ class Experiences extends React.Component {
               reviewing pull requests from other developers, mentoring junior
               developers etc. Detailed project description and screenshots could
               be found{' '}
-              <HashLink to='/projects/phoenix#top' activeClassName='active'>
+              <HashLink to='/projects/phoenix#top'>
                 here
               </HashLink>{' '}
               .

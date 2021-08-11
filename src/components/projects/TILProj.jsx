@@ -1,7 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
-import * as $ from 'jquery'
-import { ROUTE_PREFIX } from '../../settings'
 
 const THUMBNAIL_WIDTH = '350px'
 
@@ -26,9 +23,9 @@ class TILProj extends React.Component {
               width={THUMBNAIL_WIDTH}
               style={{ margin: 'auto', display: 'block', border: '1px transparent solid', borderRadius: '7px' }}
             />
-            <div style={{ display: 'flex', justifyContent: 'center' }}>
+            <span style={{ display: 'flex', justifyContent: 'center' }}>
               <span style={{ marginTop: '10px' }}>https://today-i-learned.org</span>
-            </div>
+            </span>
           </a>
         </p>
 
